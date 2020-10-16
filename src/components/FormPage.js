@@ -1,6 +1,5 @@
 import axios from 'axios';
-import React, { useState, useEffect } from 'react';
-import { Link, useRouteMatch, useHistory } from 'react-router-dom';
+import React, { useState } from 'react';
 import Form from './Form'
 import * as yup from 'yup'
 import schema from '../validation/formSchema'
@@ -29,7 +28,6 @@ const initialFormErrors = {
 
 export default function FormPage(props) {
 
-    const history = useHistory();
 
 // STATE
     const [formValues, setFormValues] = useState(initialFormState)

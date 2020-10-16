@@ -21,7 +21,7 @@ export default function Form(props) {
             <div>
                 <h2>Order Now</h2>
                 <label>
-                    Name 
+                    Name: 
                     <input
                         value={formValues.name}
                         onChange={onChange}
@@ -31,7 +31,7 @@ export default function Form(props) {
                     <div>{formErrors.name}</div>
                 </label>         
                 <label>
-                    Size
+                    Size:
                     <select name='size' value={formValues.size} onChange={onChange} >
                         <option value=''>---select size---</option>
                         <option value="small">Small</option>
@@ -40,7 +40,7 @@ export default function Form(props) {
                     </select>
                 </label>  
                 <div>
-                    Toppings   
+                    Toppings:   
                     <label>
                         Pepperoni
                         <input
@@ -80,14 +80,14 @@ export default function Form(props) {
                 </div> 
 
                 <label>
-                    Special Instructions 
+                    Special Instructions: 
                         <input
                             value={formValues.instructions}
                             onChange={onChange}
                             name="instructions"
                             type="text"
                         />              
-                </label>  
+                </label>  <br />
             <button id='submitButton'>Submit</button>
  
 
